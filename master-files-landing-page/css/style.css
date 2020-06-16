@@ -9,7 +9,7 @@
     src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-
+/* basic setting for font and imger */
 body{
     background-color: #f7f7ff;
     margin: 0;
@@ -164,6 +164,7 @@ footer {
     }
 }
 
+/*setting for desktop */
 @media (min-width: 1400px) {
     
     .logo {
