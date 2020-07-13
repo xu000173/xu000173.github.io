@@ -1,0 +1,339 @@
+body {
+    background-color: bisque;
+}
+
+/* basic setting for header */
+.wrapper {
+    background-color: black;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* logo and animation set */
+.logo {
+    height: 50px;
+    width: 100px;  
+}
+
+@keyframes hover {
+    50% {
+        transform: scale(0.5, 0.5)
+    }
+}
+
+.logo:hover {
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* use form to set search bar */
+.search {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+}
+
+input[type=text] {
+    padding: 6px;
+    border: none;
+}
+
+button {
+    padding: 6px;
+    background: #ddd;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* navigation line setting */  
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav li {
+    margin: 1.5rem auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav li a {
+    padding: 0.7rem 5rem;
+}
+
+.shop {
+    margin: 20px;
+}
+
+.shop img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* wave animation setting under the shop image */
+
+section {
+    text-align: center;
+}
+
+@keyframes wave {
+    0%, 50%, 100% { 
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1, 1.5);
+    }
+    75% {
+      transform: scale(1, 0.8);
+    }
+  }
+
+.wave {
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.wave:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* set news title and image */
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imger {
+    margin: 30px;
+    display: grid;
+    justify-content: center;
+}
+
+picture img {
+    width: 80%;
+}
+
+/* use table for set timetable */
+table, th, td {
+    border: 1px solid black;
+    padding: 25px 30px;
+}
+
+.time {
+    width: 100%;
+}
+
+.table {
+    background-color: gray;
+    display: grid;
+    width: 90%;
+}
+
+table {
+    border: 3px solid black;
+    background-color: white;
+    margin: 10px;
+}
+
+/* setting for "About" information */
+.about {
+    margin: 20px;
+}
+
+.info {
+    width: 50%;
+    float: left;
+    margin: 20px;
+}
+
+/* setting for contact */
+/* css for iframe map make it can be responsive */
+.map {
+    text-align: center;
+    font-size: 30px;
+}
+
+.google {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    margin: 20px;
+}
+
+.google iframe {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* question form set */
+h2 {
+    text-align: center;
+}
+
+fieldset {
+    margin: 20px 0 20px;
+  }
+
+#email, #name, #message {
+    width: 60%;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  label {
+    margin: 2%;
+    font-weight: bold;
+    font-size: large;
+  }
+
+.form button {
+    padding: 10px 50px 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* animation under question bar */
+@keyframes jump {
+    50% { 
+        transform: translate(0, -100px); 
+    }
+}
+  
+@keyframes jump2 {
+    10%, 25% { 
+      transform: scale(1.3, 0.7); 
+    }
+    
+    50% { 
+      transform: scale(0.5, 2) translate(0, -50px); 
+    }  
+    
+    60% { 
+      transform: scale(1, 1) translate(0, 0);   
+    } 
+    
+    75% { 
+      transform: scale(1.3, 0.7) translate(0, 0); 
+    }
+    
+    85% { 
+      transform: scale(1, 1) translate(0, 0);   
+    }
+}
+
+.question {
+    animation-name: jump2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* setting for footer */
+footer {
+    background-color: yellowgreen;
+    width: 100%;
+    margin-top: 100px;
+    padding: 30px 0 30px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: brown;
+}
+
+.icon {
+    margin: 10px 10px 0;
+}
+
+/* hover and active change setting for navgation bar */
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+nav a:hover,
+nav a:active,
+nav a.current-page {
+    color: black;
+    text-decoration: underline;
+    background-color: orange;
+}
+
+/* break point set for desktop or labtop device */
+@media (min-width: 800px) {
+
+/* use flex change navgation bar to row in desktop version */
+    nav ul {
+        flex-direction: row;
+        
+   }
+
+/* use grid change the news image to row and each row can have 3 images */
+    .imger {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+/* use grid list timetable and owner information in row in desktop version */
+    .main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .table {
+        grid-template-columns: auto auto;
+    }
+    
+    p {
+        margin: 20px;
+        font-weight: bold;
+    }
+/* use grid list map and question bar in row in desktop version */
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto;       
+    }
+/* use float let social icon move to right corner side in desktop version */
+    .icon {
+        float: right;
+        margin: 0 10px 0;
+    }
+}
+
