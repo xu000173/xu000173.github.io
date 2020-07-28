@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1 class="mt-3 text-center">BOOTSTRAP</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark h3">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#burger">
+            <span class="navbar-toggler-icon"></span>    
+        </button>
+        <div id="burger" class="collapse navbar-collapse">
+            <a href="#" class="nav-link">Info</a>
+            <a href="#" class="nav-link">Benefit</a>
+            <a href="#" class="nav-link">example</a>
+        </div>
+        <form class="form-inline my-2">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div id="demo" class="carousel slide w-80" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <div class="carousel-inner container">
+                <div class="carousel-item active" style="min-height:300px; max-height:1000px">
+                  <img src="./img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg" class="img-fluid w-100" alt="what is bootstrap">
+                  <div class="carousel-caption">
+                    <h3>What is Bootstrap?</h3>
+                  </div>
+                </div>
+                <div class="carousel-item" style="min-height:300px; max-height:1000px">
+                  <img src="./img/martin-shreder-5Xwaj9gaR0g-unsplash.png" class="img-fluid w-100" alt="benefit with bootstrap">
+                  <div class="carousel-caption">
+                    <h3>Benefit with Bootstrap!</h3>
+                  </div>
+                </div>
+                <div class="carousel-item" style="min-height:300px; max-height:1000px">
+                  <img src="./img/anas-alshanti-feXpdV001o4-unsplash.png" class="img-fluid w-100" alt="simple to learn">
+                  <div class="carousel-caption">
+                    <h3>Question with Bootstrap?</h3>
+                  </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="jumbotron">
+      <h1 class="display-4">What is Bootstrap</h1>
+      <p class="lead mt-5">Bootstrap is the most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+      <hr class="my-4">
+      <p>Many components in bootstrap require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and JavaScript plugins build by bootstrap. </p>
+      <p>You need place three scripts near the end of your pages, right before the closing body tag to make the frame work. Those scripts must follow the order which is jQuery first, then Popper.js, and then the JavaScript plugins.</p>
+      <a class="btn btn-dark btn-md" href="#" role="button">Learn more</a>
+    </div>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Benefit with Bootstrap</h1>
+      <div class="card-deck mt-5">
+        <div class="card">
+          <img class="card-img-top" src="./img/domenico-loia-EhTcC9sYXsw-unsplash.png" alt="card img">
+          <div class="card-body">
+              <h4 class="card-title">Responsiveness</h4>
+              <p class="card-text">Creating mobile-first websites with Bootstrap is very easy, with the Bootstrap responsive grid easily adapting your website layout to display correctly on common screen sizes without create css file.</p>
+              <a href="#" class="btn btn-dark">Learn more</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./img/stephan-henning-S0hFspmvm_s-unsplash.png" alt="card img">
+          <div class="card-body">
+            <h4 class="card-title">Improve efficiency</h4>
+            <p class="card-text">Bootstrap will significantly speed up development time and improve workflows. And the bootstrap will help you avoid common styling mistakes like centring text, floating elements and changing font sizes with built-in classes automaticly.</p>
+            <a href="#" class="btn btn-dark">Learn more</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./img/marvin-meyer-SYTO3xs06fU-unsplash.png" alt="card img">
+          <div class="card-body">
+            <h4 class="card-title">Versatility</h4>
+            <p class="card-text">Bootstrap supports the multiple versions of browser include Google Chrome, Firefox, Internet Explorer, Opera, and Safari. It even provides support as far back as Internet Explorer 8, meaning Bootstrap will offer you wider accessibility right from the start.</p>
+            <a href="#" class="btn btn-dark">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Examples</h1>
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-xs-7 col-lg-5">
+            <p class="font-weight-bold">Alert simple</p>
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <pre><code>&lt;div&gt; class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+              &lt;/div&gt;
+            </code></pre>
+          </div>
+          <div class="col-xs-7 col-lg-5">
+            <p class="font-weight-bold">Dropdown link</p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">link1</a>
+                <a class="dropdown-item" href="#">link2</a>
+              </div>
+            </div>
+            <pre><code>&lt;div&gt; class="dropdown">
+              &lt;button&gt; class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+                &lt;/button&gt;
+              &lt;div&gt; class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                &lt;a&gt; class="dropdown-item" href="#">link1&lt;/a&gt;
+                &lt;a&gt; class="dropdown-item" href="#">link2&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+          </div>
+          <div class="col-xs-7 col-lg-5">
+            <p class="font-weight-bold">Badges</p>
+            <button type="button" class="btn btn-primary">
+              button with counter <span class="badge badge-light">6</span>
+            </button>
+            <pre><code>&lt;button&gt; type="button" class="btn btn-primary">
+              button with counter &lt;span&gt; class="badge badge-light">6&lt;/span&gt;
+              &lt;/button&gt;</code></pre>
+          </div>
+          <div class="col-xs-7 col-lg-5">
+            <p class="font-weight-bold">Button group</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">Left</button>
+              <button type="button" class="btn btn-secondary">right</button>
+            </div>
+            <pre><code>&lt;div&gt; class="btn-group" role="group" aria-label="Basic example">
+              &lt;button&gt; type="button" class="btn btn-secondary">Left&lt;/button&gt;
+              &lt;button&gt; type="button" class="btn btn-secondary">right&lt;/button&gt;
+            &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Question with Bootstrap?</h1>
+      <form class="mt-5">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="question">Question</label>
+          <textarea class="form-control" id="question" rows="5"></textarea>
+        </div>
+        <button type="button" class="btn btn-dark btn-lg">Submit</button>
+      </form>
+    </div>
+
+    <div class="jumbotron p-3">
+      <div class="container">
+        <div class="row row-cols-2 text-center">
+          <a href="#" class="lead font-weight-bold col-md-3">Tutorials</a>
+          <a href="#" class="lead font-weight-bold col-md-3">References</a>
+          <a href="#" class="lead font-weight-bold col-md-3">Social link</a>
+          <a href="#" class="lead font-weight-bold col-md-3">Certificates</a>
+        </div>
+      </div>
+      <p class="lead font-weight-bold text-center mt-3">&#169; 2020 Bootstrap</p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
