@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Sweet Home</title>
+    <style>
+      h1 {
+        font-family: 'Lobster', cursive;
+        color: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sweet Home</h1>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    
+    <!--Use nav for Navigation Bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark h3">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#burger">
+        <span class="navbar-toggler-icon"></span>    
+      </button>
+      <div id="burger" class="collapse navbar-collapse">
+          <a href="index.html" class="nav-link">Home</a>
+          <a class="current-page nav-link" href="menu.html">Menu</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <form class="form-inline my-2">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+<!--Use Bootstrap card-deck to create menu then use Bootstrap grid for the layout-->
+    <div class="jumbotron mt-5">
+      <div class="row justify-content-around">
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/chesscake.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake</h5>
+            <p class="card-text">The cheesecake use the cheese from Quebec and have grill surface.</p>
+            <a href="#" class="btn btn-primary">$ 5.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/chocolate.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate brownie</h5>
+            <p class="card-text">The chocolate has the crispy outer layer and soft inter layer.</p>
+            <a href="#" class="btn btn-primary">$ 4.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/cupcake.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Cupcake</h5>
+            <p class="card-text">This is a combination of soft bread and fondant.</p>
+            <a href="#" class="btn btn-primary">$ 1.99/each</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/puff.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Cream Puff</h5>
+            <p class="card-text">The cream puff use the crispy pastry to warp the vanilla cream.</p>
+            <a href="#" class="btn btn-primary">$ 3.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/mousse.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Mousse cake</h5>
+            <p class="card-text">Very popular product in our shop it taste like pudding but will give you different feeling.</p>
+            <a href="#" class="btn btn-primary">$ 5.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/pie.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Fruits Pie</h5>
+            <p class="card-text">Inside pastry have lots of fruits jam it's not too sweet and have the smell of cinnamon.</p>
+            <a href="#" class="btn btn-primary">$ 4.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/pudding.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Pudding</h5>
+            <p class="card-text">The pudding is very creamy and the strawberry jam on the top will not let you feel tired.</p>
+            <a href="#" class="btn btn-primary">$ 4.99</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/donut.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Donut</h5>
+            <p class="card-text">We have many donuts with different flavor we can help you to pack up.</p>
+            <a href="#" class="btn btn-primary">$ 1.99/each</a>
+          </div>
+        </div>
+        <div class="card-deck col-xs-7 col-lg-4" style="width: 18rem;">
+          <img src="./img/cookie.png" class="card-img-top" alt="products">
+          <div class="card-body">
+            <h5 class="card-title">Cookie</h5>
+            <p class="card-text">The cookie is very crispy also with strong butter flavor.</p>
+            <a href="#" class="btn btn-primary">$ 3.99/bag</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Use Bootstrap component container to create a footer then use bootstrap grid set the four link's position-->
+    <div class="jumbotron p-3">
+      <div class="container">
+        <div class="row row-cols-2 text-center">
+          <a href="#" class="lead font-weight-bold col-md-3">Staff</a>
+          <a href="#" class="lead font-weight-bold col-md-3">Sponsor</a>
+          <a href="#" class="lead font-weight-bold col-md-3">Social link</a>
+          <a href="#" class="lead font-weight-bold col-md-3">History</a>
+        </div>
+      </div>
+      <p class="lead font-weight-bold text-center mt-3">&#169; 2020 sweet home</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
